@@ -85,4 +85,6 @@ export default async function Layout({
   );
 }
 
+// Change time to 0 in develpment since sanity webhook work only in production
+// after finishing dev switch back to 86400 which is a day of caching.
 export const revalidate = 86400;
