@@ -1,10 +1,10 @@
-import HomePage from "./home";
+import HomeLifeStyle from "./home/lifestyle/lifestyle";
+
 import { getAllPosts } from "@/lib/sanity/client";
 
-export default async function IndexPage() {
+export default async function LifeStyleHomePage() {
   const posts = await getAllPosts();
-
-  return <HomePage posts={posts} />;
+  return <HomeLifeStyle posts={posts} />;
 }
 
 // export const revalidate = 60;

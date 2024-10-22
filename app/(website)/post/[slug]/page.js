@@ -1,4 +1,4 @@
-import PostPage from "./default";
+import PostPage from "./lifestyle";
 
 import { getAllPostsSlugs, getPostBySlug } from "@/lib/sanity/client";
 
@@ -8,7 +8,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const post = await getPostBySlug(params.slug);
-  return { title: post.title, description: post.excerpt };
+  return { title: post.title };
 }
 
 export default async function PostDefault({ params }) {
