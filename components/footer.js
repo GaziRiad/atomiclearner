@@ -11,15 +11,15 @@ export default function Footer(props) {
         Copyright © {new Date().getFullYear()} {props?.copyright}.
         All rights reserved.
       </div>
-      <div className="mt-1 text-center text-sm text-gray-500 dark:text-gray-600">
+      {/* <div className="mt-1 text-center text-sm text-gray-500 dark:text-gray-600">
         Made by{" "}
         <a
-          href="https://x.com/Riadh_Gazi"
+          href="https://www.linkedin.com/in/riad-hallouch-3289b9209/"
           rel="noopener"
           target="_blank">
           Gazi Riad Hallouch
         </a>
-      </div>
+      </div> */}
       <div className="mt-2 flex items-center justify-center">
         <ThemeSwitch />
       </div>

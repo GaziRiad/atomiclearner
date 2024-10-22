@@ -2,6 +2,9 @@ import Container from "@/components/container";
 import PostList from "@/components/postlist";
 import Featured from "@/components/featured";
 
+// import Sidebar from "@/components/sidebar";
+import SearchInput from "@/components/ui/search";
+
 export default function HomeLifeStyle({ posts }) {
   const featuredPost = posts.filter(item => item.featured) || null;
 
@@ -12,6 +15,13 @@ export default function HomeLifeStyle({ posts }) {
       )}
 
       <Container large>
+        <form
+          action="/search"
+          method="GET"
+          className="mx-auto max-w-2xl text-center">
+          <SearchInput placeholder="Search keyword" />
+        </form>
+
         {featuredPost.length > 4 && (
           <>
             <div className="mt-10 flex items-center justify-center">

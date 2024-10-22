@@ -49,7 +49,7 @@ export default function About({ authors, settings }) {
           business dashboarding, and loan decisioning.
         </p>
         <p>
-          <Link href="/contact">Get in touch</Link>
+          <Link href="/">Get in touch</Link>
         </p>
       </div>
     </Container>
