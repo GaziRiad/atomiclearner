@@ -1,6 +1,7 @@
 import Container from "@/components/container";
 import PostList from "@/components/postlist";
 import Featured from "@/components/featured";
+import SearchInput from "@/components/ui/search";
 
 export default function HomeLifeStyle({ posts }) {
   const featuredPost = posts.filter(item => item.featured) || null;
@@ -47,6 +48,13 @@ export default function HomeLifeStyle({ posts }) {
             </div>
           </>
         )}
+
+        <form
+          action="/search"
+          method="GET"
+          className="mx-auto mt-4 max-w-3xl">
+          <SearchInput placeholder="Enter keywords" />
+        </form>
 
         <div className="mt-4 flex items-center justify-center">
           <h3 className="text-2xl">
