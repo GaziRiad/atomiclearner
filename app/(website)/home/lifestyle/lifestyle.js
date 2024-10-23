@@ -16,7 +16,7 @@ export default function HomeLifeStyle({ posts }) {
           <>
             <div className="mt-10 flex items-center justify-center">
               <h2 className="text-2xl">
-                <strong>Featured</strong> Posts
+                <strong>Featuredd</strong> Posts
               </h2>
             </div>
             <div className="mb-20 mt-10 grid gap-10 md:grid-cols-3 lg:grid-cols-4 lg:gap-10 ">
